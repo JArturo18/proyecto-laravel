@@ -27,7 +27,13 @@
         <td>
             <a href="{{ route("post.edit", $p) }}">Editar</a>
             <a href="{{ route("post.show", $p) }}">ver</a>
-            <a href="{{ route("post.destroy", $p) }}">Eliminar</a>
+            {{-- <a href="{{ route("post.destroy", $p) }}">Eliminar</a> --}}
+            <form action="{{ route("post.destroy", $p) }}" method="post">
+                @method("DELETE")
+                @csrf       
+            <button type="submit">Eliminar</button>
+            </form>
+            
             
         </td>
     </tr>

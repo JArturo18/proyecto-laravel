@@ -1,14 +1,14 @@
 @extends('dashboard.layout')
 @section('content')
 
-<h1>Actualizar Post: {{ $post->title }}</h1>
+<h1>Actualizar Categroy: {{ $category->title }}</h1>
 
-<form action="{{ route('post.update',$post->id) }}" method="post" enctype="multipart/form-data">
+<form action="{{ route('category.update',$category->id) }}" method="post">
     @method("PATCH")
 @csrf
 
 
-    @include('dashboard.post._form', ["task" => "edit"])
+    @include('dashboard.category._form')
 
 
     {{-- <label for="">Titulo</label>

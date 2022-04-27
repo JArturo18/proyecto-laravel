@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Requests\Post\PutRequest;
 use App\Http\Requests\Post\StoreRequest;
-// use App\Models\Category;
+use App\Models\Category;
 use App\Models\Post;
 
 class PostController extends Controller
