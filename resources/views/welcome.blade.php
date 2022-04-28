@@ -130,6 +130,8 @@
         </div>
     </body>
 
-    <script> alert("Hola Bienvenido")</script>
+    <h1>Hola Bienvenido</h1>
+
+    {{-- <script> alert("Hola Bienvenido")</script> --}}
 
 </html>

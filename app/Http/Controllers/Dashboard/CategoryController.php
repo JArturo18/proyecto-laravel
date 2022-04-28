@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Requests\Category\PutRequest;
 use App\Http\Requests\Category\StoreRequest;
-use App\Models\Post;
+//use App\Models\Post;
 use App\Models\Category;
 
 class CategoryController extends Controller
@@ -22,6 +22,7 @@ class CategoryController extends Controller
     return view ('dashboard.category.index',compact('categories'));
 
     }
+
 
     /**
      * Show the form for creating a new resource.
