@@ -4,7 +4,7 @@
 
 <a href="{{ route("post.create") }}">Cresar</a>
 
-<table>
+<table class="table">
 <thead>
 
 <tr>
@@ -40,6 +40,9 @@
     @endforeach
 </tbody>
 </table>
+
+
+
 
 {{$posts->links()}}
 
